@@ -1,3 +1,5 @@
+# Lid-Driven Cavity Project
+
 All files in this repository are required to run the code to generate data points that map velocity, vorticity and streamfunction values at different grid locations.   
 Documentation is written within the source code as comments, describing the functions and purpose of each file.
 
