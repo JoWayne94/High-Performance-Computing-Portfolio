@@ -13,10 +13,10 @@ Please make sure the libraries below are installed on the system before running 
 * MPI - message passing interface for parallel programming
 * ScaLAPACK - linear algebra package to solve systems of simultaneous linear equations in parallel
 
-_____________________________________________________
+____________________________________________
 UNIX/Linux
 
-# Compile the program
+## Compile the program
 
 Navigate to the directory containing all source codes, then enter the following commands accordingly:
 
@@ -26,7 +26,7 @@ make
 
 The **Makefile** will compile the program and produce the executable **Solve** file.
 
-# Run test cases
+## Run test cases
 
 One serial and one parallel test cases are declared in the **Makefile** for validation purposes. Their parameters are:
 
@@ -36,7 +36,7 @@ One serial and one parallel test cases are declared in the **Makefile** for vali
 * T = 1.0
 * Re = 100
 
-# Serial test case
+## Serial test case
 
 Run with single process (--np 1) and Px = Py = 1:
 
@@ -44,7 +44,7 @@ Run with single process (--np 1) and Px = Py = 1:
 make testSerial
 ```
 
-# Parallel test case
+## Parallel test case
 
 Run with 4 processes (--np 4) with Px = Py = 2, Px * Py = 4:
 
@@ -54,7 +54,7 @@ make testParallel
 
 Output of the tests will be in the **Plot/** folder.
 
-# Run cases
+## Run cases
 
 Shell script named **RunSolver.sh** batch runs the solver with given parameters:
 
@@ -71,29 +71,29 @@ Shell script named **RunSolver.sh** batch runs the solver with given parameters:
 
 16 processes (--np 16), Px = Py = 4 are used for the runs. Output is saved in the **Plot/** folder in a `<Lx>_<Ly>_<Nx>_<Ny>_<Re>_data.txt` format.
 
-# Clean folder
+## Clean folder
 
-To remove generated files, run the following commands.
+To remove generated files, run the following commands:
 
-# Remove generated object files (*.o)
+### Remove generated object files (*.o)
 
 ```shell
 make clean
 ```
 
-# Remove generated data file (*.txt)
+### Remove generated data file (*.txt)
 
 ```shell
 make cleanData
 ```
 
-# Remove all generated files
+### Remove all generated files
 
 ```shell
 make cleanAll
 ```
 
-# Usage
+## Usage
 
 Once the solver has been compiled, it can be used via the format
 
@@ -115,7 +115,7 @@ options:
 --Re <double>	 Reynolds number
 ```
 
-# Directory Files
+## Directory Files
 
 * [assignment.pdf](./assignment.pdf)                   - HPC coursework assignment brief
 * [Lid-Driven-Cavity.ipynb](./Lid-Driven-Cavity.ipynb) - A seperate Python implementation of a serial lid-driven cavity solver
