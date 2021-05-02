@@ -36,7 +36,7 @@ One serial and one parallel test cases are declared in the **Makefile** for vali
 * T = 1.0
 * Re = 100
 
-## Serial test case
+### Serial test case
 
 Run with single process (--np 1) and Px = Py = 1:
 
@@ -44,7 +44,7 @@ Run with single process (--np 1) and Px = Py = 1:
 make testSerial
 ```
 
-## Parallel test case
+### Parallel test case
 
 Run with 4 processes (--np 4) with Px = Py = 2, Px * Py = 4:
 
@@ -54,7 +54,7 @@ make testParallel
 
 Output of the tests will be in the **Plot/** folder.
 
-## Run cases
+## Run Cases
 
 Shell script named **RunSolver.sh** batch runs the solver with given parameters:
 
@@ -110,9 +110,9 @@ options:
 --Ny <int>     number of grid points in the y-direction
 --Px <int>     number of partitions in the x-direction
 --Py <int>     number of partitions in the y-direction
---dt <double>	 time step size
+--dt <double>  time step size
 --T <double>   final time
---Re <double>	 Reynolds number
+--Re <double>  Reynolds number
 ```
 
 ## Directory Files
@@ -131,11 +131,11 @@ options:
 * [RunSolver.sh](./RunSolver.sh)           - Shell script to run solver and produce required data
 * [SpeedBatch.sh](./SpeedBatch.sh)         - Shell script to batch run solver for different number of processes and output time taken
 
-Output files from running different scripts
+Output files from running different scripts:
 
 * **executionTimes.txt** - Text file containing run times for different number of processes. Output of ./SpeedBatch.sh
 * **LidDrivenCavity.o** - Object file of LidDrivenCavity.cpp from running make
 * **LidDrivenCavitySolver.o** - Object file of LidDrivenCavitySolver.cpp from running make
 * **PoissonSolver.o** - Object file of PoissonSolver.cpp from running make
-* **./Plot/*.txt** - Text files containing data produced from running ./Solve
+* **Plot/*.txt** - Text files containing data produced from running ./Solve
 * **./Solve** - Executable linking LidDrivenCavitySolver.o, LidDrivenCavity.o and PoissonSolver.o
