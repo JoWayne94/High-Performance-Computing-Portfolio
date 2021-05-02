@@ -103,15 +103,15 @@ mpiexec --np <no. of procs> ./Solve [options] [args]
 
 ```
 options:
---help				 prints help message
---Lx <double>	 length of domain in the x-direction
---Ly <double>	 length of domain in the y-direction
---Nx <int>		 number of grid points in the x-direction
---Ny <int>		 number of grid points in the y-direction
---Px <int>		 number of partitions in the x-direction
---Py <int>		 number of partitions in the y-direction
+--help         prints help message
+--Lx <double>  length of domain in the x-direction
+--Ly <double>  length of domain in the y-direction
+--Nx <int>     number of grid points in the x-direction
+--Ny <int>     number of grid points in the y-direction
+--Px <int>     number of partitions in the x-direction
+--Py <int>     number of partitions in the y-direction
 --dt <double>	 time step size
---T <double>	 final time
+--T <double>   final time
 --Re <double>	 Reynolds number
 ```
 
