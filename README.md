@@ -1,6 +1,6 @@
 # Lid-Driven Cavity Project
 
-This project implements a parallel numerical code to solve the vorticity-streamfunction formulation of the incompressible Naiver-Stokes equation in 2D using the finite difference method. In other words, it presents a solver for the lid-driven cavity problem. Output of solver is used to generate data points that map velocity, vorticity and streamfunction values at different grid locations.   
+This project implements a parallel numerical code to solve the vorticity-streamfunction formulation of the incompressible Naiver-Stokes equation in 2D using the finite difference method. In other words, it presents a solver for the lid-driven cavity problem. Output of solver is used to generate data points that map velocity, vorticity and streamfunction values at different grid locations. Full report can be found [here](https://www.researchgate.net/publication/344228346_Lid-Driven_Cavity_Report).
 
 ## Pre-requisites
 
