@@ -123,7 +123,7 @@ options:
 * [LidDrivenCavity.h](./LidDrivenCavity.h)             - Header file for the LidDrivenCavity class
 * [LidDrivenCavitySolver.cpp](./LidDrivenCavitySolver.cpp) - Accept options for the solver and sets up the solver for the lid-driven cavity problem
 * [Makefile](./Makefile)                   - Compilation of executable, cleaning, and test cases
-* [Plot/](./Plot/)                         - Folder containing output data of the solver to generate plots
+* [./Plot/](./Plot/)                         - Folder containing output data of the solver to generate plots
 * [PoissonSolver.cpp](./PoissonSolver.cpp) - Implement serial and parallel PoissonSolver class member functions
 * [PoissonSolver.h](./PoissonSolver.h)     - Header file for the PoissonSolver class
 * [README.md](./README.md)                 - README markdown file
@@ -137,5 +137,5 @@ Output files from running different scripts:
 * **LidDrivenCavity.o** - Object file of LidDrivenCavity.cpp from running make
 * **LidDrivenCavitySolver.o** - Object file of LidDrivenCavitySolver.cpp from running make
 * **PoissonSolver.o** - Object file of PoissonSolver.cpp from running make
-* **Plot/*.txt** - Text files containing data produced from running ./Solve
+* **./Plot/*.txt** - Text files containing data produced from running ./Solve
 * **./Solve** - Executable linking LidDrivenCavitySolver.o, LidDrivenCavity.o and PoissonSolver.o
