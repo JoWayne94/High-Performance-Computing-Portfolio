@@ -84,7 +84,7 @@ make clean
 ### Remove generated data file (*.txt)
 
 ```shell
-make cleanData
+make cleanPlot
 ```
 
 ### Remove all generated files
